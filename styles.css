@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+#output {
+  text-align: center;
+}
+
+fieldset,
+#output {
+  padding: 20px 16px;
+  border: 1px solid #000;
+  border-radius: 8px;
+  box-shadow: 10px 10px;
+}
+
+fieldset > *,
+#output {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+h1,
+button {
+  font-family: "Comfortaa", sans-serif;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input {
+  font-size: 20px;
+  margin-bottom: 8px;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: #faa356;
+  padding: 10px 8px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 5px 5px;
+}
+
+button:hover {
+  transform: translate(1px 1px);
+  box-shadow: 4px 4px;
+}
+
+.hidden {
+  display: none;
+}
+
+.bg-danger {
+  background-color: #fa7970;
+}
